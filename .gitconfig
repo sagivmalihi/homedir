@@ -1,0 +1,18 @@
+[user]
+	name = Sagiv Malihi
+	email = sagivm@il.ibm.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+    excludesfile = /a/home/sagivm/.gitignore
+[alias]
+    trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
+    propose = !git push origin +HEAD:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    unpropose = !git push origin +:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    integrate = !git push origin +HEAD:$USER/integrate/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    unintegrate = !git push origin +:$USER/integrate/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    bs = !branch_stats.py
+[push]
+	default = tracking

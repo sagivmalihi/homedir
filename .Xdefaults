@@ -1,0 +1,5 @@
+xterm*Background: black
+xterm*Foreground: white
+XTerm*boldMode: false
+XTerm*boldFont: 10x20b
+XTerm*Font: 10x20

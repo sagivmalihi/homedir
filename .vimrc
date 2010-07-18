@@ -7,12 +7,20 @@ source $HOME/.vim/python_fn.vim
 source $HOME/.vim/ropevim.vim
 
 set selection=inclusive
-set ruler
+set ruler       " show the cursor position all the time
+set showcmd     " display incomplete commands
+
+" Remember more commands and search history
+set history=1000
+
+" Keep more context when scrolling off the end of a buffer
+set scrolloff=3
 
 "search options
 "set ignorecase
 set smartcase
 set incsearch
+set showmatch   "show matching parens
 set hlsearch
 
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.pyo,*~

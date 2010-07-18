@@ -1,5 +1,5 @@
-Xterm*Background: black
-Xterm*Foreground: white
-XTerm*boldMode: false
-XTerm*boldFont: 10x20b
-XTerm*Font: 10x20
+xterm*Background: black
+xterm*Foreground: white
+xterm*boldMode: false
+xterm*boldFont: 10x20b
+xterm*Font: 10x20

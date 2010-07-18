@@ -1,0 +1,6 @@
+*.pyc
+*.py~
+*.swp
+tags
+cscope.out
+.nfs*

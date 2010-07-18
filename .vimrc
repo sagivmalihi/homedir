@@ -4,11 +4,13 @@ behave mswin
 source $VIMRUNTIME/mswin.vim
 source $HOME/.vim/cscope_maps.vim
 source $HOME/.vim/python_fn.vim
+source $HOME/.vim/ropevim.vim
 
 set selection=inclusive
+set ruler
 
 "search options
-set ignorecase
+"set ignorecase
 set smartcase
 set incsearch
 set hlsearch
@@ -17,7 +19,9 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.pyo,*~
 
 "black colorscheme
 colorscheme torte
-syntax on 
+syntax on
+syntax sync fromstart
+let python_highlight_space_errors=1
 
 set backspace=eol,start,indent
 
@@ -35,7 +39,7 @@ set mouse=a
 "proper autocomplete
 set completeopt=longest,menuone
 inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
- :inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
+:inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 :inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 
 function! InsertTabWrapper(direction)

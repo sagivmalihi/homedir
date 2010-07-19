@@ -4,7 +4,7 @@ behave mswin
 source $VIMRUNTIME/mswin.vim
 source $HOME/.vim/cscope_maps.vim
 source $HOME/.vim/python_fn.vim
-source $HOME/.vim/ropevim.vim
+" source $HOME/.vim/ropevim.vim
 
 set selection=inclusive
 set ruler       " show the cursor position all the time

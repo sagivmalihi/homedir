@@ -10,6 +10,9 @@ set selection=inclusive
 set ruler       " show the cursor position all the time
 set showcmd     " display incomplete commands
 
+filetype on
+filetype plugin on
+
 " Remember more commands and search history
 set history=1000
 

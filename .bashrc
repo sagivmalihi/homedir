@@ -100,8 +100,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 
-export PYTHONPATH=/home/sagiv/python/
-export PYTHONSTARTUP=/home/sagiv/python/startup.py
+export PYTHONPATH=$HOME/work/python/
+export PYTHONSTARTUP=$HOME/work/python/startup.py
 
 if [ -t 0 ]; then
     stty stop undef

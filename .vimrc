@@ -77,3 +77,16 @@ noremap <C-A> <Home>
 inoremap <C-E> <End>
 noremap <C-E> <End>
 
+
+"Edit mapping (make cursor keys work like in Windows: <C-Left><C-Right>
+"Move to next word.
+nnoremap <C-Left> b
+vnoremap <C-S-Left> b
+nnoremap <C-S-Left> gh<C-O>b
+inoremap <C-S-Left> <C-O>gh<C-O>b
+
+nnoremap <C-Right> w
+vnoremap <C-S-Right> w
+nnoremap <C-S-Right> gh<C-O>w
+inoremap <C-S-Right> <C-O>gh<C-O>w
+

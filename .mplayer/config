@@ -1,0 +1,4 @@
+# Write your default config options here!
+subcp="ISO8859-8"
+font="Arial"
+flip-hebrew-commas="yes"

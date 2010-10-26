@@ -5,6 +5,7 @@
 import sys
 import os
 import re
+import time
 import urllib2
 import zipfile
 import StringIO
@@ -18,7 +19,7 @@ SUBTITLE_ID_RE = re.compile(r"http://www.sratim.co.il/subtitles.php\?mid=\d+#(\d
 DOWNLOAD_URL = "http://www.sratim.co.il/downloadsubtitle.php?id=%s"
 SUBTITLE_SUFFIXES = ".srt", ".sub"
 VIDEO_SUFFIXES = ".avi", ".mkv"
-LEVENSHTEIN_DIST_BOUND = 0.2
+LEVENSHTEIN_DIST_BOUND = 0.1
 
 def get_rss_sub(rss_sub):
     hebrew_title, english_title = rss_sub.title.split(" | ")
@@ -59,7 +60,9 @@ def get_videos(path):
 
 def download_subtitles_for_path(path):
     video_filenames = list(get_videos(path))
+    print "checking against %d video files" % len(video_filenames)
     for title, sub_id in get_last_subs():
+        print "checking", title
         for video_filename in video_filenames:
             basename, _ = os.path.splitext(video_filename)
             score = levenshtein(title, basename)
@@ -76,7 +79,8 @@ def download_subtitles_for_path(path):
                     i += 1
                 os.rename(full_path_sub, full_path_vid + sub_ext)
 
-
 if __name__ == '__main__':
-    download_subtitles_for_path(sys.argv[1])
+    while True:
+        download_subtitles_for_path(sys.argv[1])
+        time.sleep(60)
 

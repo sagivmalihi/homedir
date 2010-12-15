@@ -66,7 +66,7 @@ def download_subtitles_for_path(path):
         for video_filename in video_filenames:
             basename, _ = os.path.splitext(video_filename)
             score = levenshtein(title, basename)
-            if score < LEVENSHTEIN_DIST_BOUND:
+            if score < LEVENSHTEIN_DIST_BOUND or basename.startswith(title) or title.startswith(basename):
                 print title, basename, score
                 [downloaded] = list(get_subtitle(sub_id, path))
                 full_path_sub = os.path.join(path, downloaded)

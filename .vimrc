@@ -90,3 +90,6 @@ vnoremap <C-S-Right> w
 nnoremap <C-S-Right> gh<C-O>w
 inoremap <C-S-Right> <C-O>gh<C-O>w
 
+
+cmap w!! %!sudo tee > /dev/null %
+

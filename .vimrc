@@ -4,6 +4,9 @@ behave mswin
 source $VIMRUNTIME/mswin.vim
 source $HOME/.vim/cscope_maps.vim
 source $HOME/.vim/python_fn.vim
+" Autoload package bundles
+call pathogen#runtime_append_all_bundles()
+
 " source $HOME/.vim/ropevim.vim
 
 set selection=inclusive

@@ -1,0 +1,99 @@
+i   aptitude                        - terminal-based package manager (terminal i
+i   build-essential                 - Informational list of build-essential pack
+i   bzr                             - easy to use distributed version control sy
+i   cairo-dock                      - A light and eye-candy dock to launch your 
+i   clang                           - Low-Level Virtual Machine (LLVM), C langua
+i   compizconfig-settings-manager   - Compiz configuration settings manager     
+i   cscope                          - Interactively examine a C program source  
+i   dos2unix                        - convert text file line endings between CRL
+i   ethtool                         - display or change Ethernet device settings
+i   exuberant-ctags                 - build tag file indexes of source code defi
+i   ffmpeg                          - Multimedia player, server, encoder and tra
+i   git                             - fast, scalable, distributed revision contr
+i   git-core                        - fast, scalable, distributed revision contr
+i   git-man                         - fast, scalable, distributed revision contr
+i   google-chrome-beta              - The web browser from Google               
+i   google-talkplugin               - Google Talk Plugin                        
+i   gource                          - graphical source control visualisation    
+i   hspell                          - Hebrew spell checker and morphological ana
+i A imagemagick                     - image manipulation programs               
+i   ipheth-dkms                     - USB tethering driver for the iPhone [DKMS 
+i   ipython                         - enhanced interactive Python shell         
+i   llvm                            - Low-Level Virtual Machine (LLVM)          
+i   lm-sensors                      - utilities to read temperature/voltage/fan 
+i   lynx                            - Text-mode WWW Browser (transitional packag
+i   mercurial                       - scalable distributed version control syste
+i   mplayer                         - movie player for Unix-like systems        
+i   openssh-client                  - secure shell (SSH) client, for secure acce
+i   openssh-server                  - secure shell (SSH) server, for secure acce
+i   openssl                         - Secure Socket Layer (SSL) binary and relat
+i   p7zip-full                      - 7z and 7za file archivers with high compre
+i   perl                            - Larry Wall's Practical Extraction and Repo
+i   pgpgpg                          - Wrapper for using GnuPG in programs design
+i   picasa                          - Image management application from Google  
+i   pidgin                          - multi-protocol instant messaging client   
+i   pidgin-plugin-pack              - Collection of Pidgin plugins              
+i   python-crypto                   - cryptographic algorithms and protocols for
+i   python-eyed3                    - Python module for id3-tags manipulation   
+i   python-imaging                  - Python Imaging Library                    
+i   python-lxml                     - pythonic binding for the libxml2 and libxs
+i   python-matplotlib               - Python based plotting system in a style si
+i   python-nose                     - test discovery and running for Python's un
+i   python-notify                   - Python bindings for libnotify             
+i   python-numeric                  - Numerical (matrix-oriented) Mathematics fo
+i A python-opengl                   - Python bindings to OpenGL                 
+i   python-openssl                  - Python wrapper around the OpenSSL library 
+i   python-pip                      - alternative Python package installer      
+i   python-pygments                 - syntax highlighting package written in Pyt
+i   python-pyinotify                - simple Linux inotify Python bindings      
+i   python-scapy                    - Packet generator/sniffer and network scann
+i   python-serial                   - pyserial - module encapsulating access for
+i A python-setuptools               - Python Distutils Enhancements (setuptools 
+i   python-sphinx                   - tool for producing documentation for Pytho
+i A python-tk                       - Tkinter - Writing Tk applications with Pyt
+i   python-twisted-bin              - Event-based framework for internet applica
+i   python-twisted-core             - Event-based framework for internet applica
+i   python-twisted-names            - A DNS protocol implementation with client 
+i   python-twisted-web              - An HTTP protocol implementation together w
+i   python-zope.interface           - Interfaces for Python                     
+i   python3                         - interactive high-level object-oriented lan
+i   rake                            - a ruby build program                      
+i   rsync                           - fast remote file copy program (like rcp)  
+i   ruby                            - An interpreter of object-oriented scriptin
+i   s5                              - A simple HTML-based presentation system   
+i   screen                          - terminal multiplexor with VT100/ANSI termi
+i   splint                          - tool for statically checking C programs fo
+i   subversion                      - Advanced version control system           
+i   tcpdump                         - A powerful tool for network monitoring and
+i   terminator                      - multiple GNOME terminals in one window    
+i   tkdiff                          - graphical side by side "diff" utility     
+i   traceroute                      - Traces the route taken by packets over an 
+i   ttf-mscorefonts-installer       - Installer for Microsoft TrueType core font
+i A ttf-xfree86-nonfree             - non-free TrueType fonts from XFree86      
+i   unrar                           - Unarchiver for .rar files (non-free versio
+i   unzip                           - De-archiver for .zip files                
+i   vim-gnome                       - Vi IMproved - enhanced vi editor - with GN
+i   wine                            - Microsoft Windows Compatibility Layer (met
+i   xbmc-ppa-keyring                - GnuPG archive keys for the XBMC PPA       
+i   xbmc                            - XBMC Media Center (full metapackage)      
+i   xterm                           - X terminal emulator                       
+i   zip                             - Archiver for .zip files                   
+
+i A tex-common                      - common infrastructure for building and ins
+i A texlive-base                    - TeX Live: Essential programs and files    
+i   texlive-binaries                - Binaries for TeX Live                     
+i   texlive-common                  - TeX Live: Base component                  
+i A texlive-doc-base                - TeX Live: TeX Live documentation          
+i   texlive-latex-base              - TeX Live: Basic LaTeX packages            
+i A texlive-latex-base-doc          - TeX Live: Documentation files for texlive-
+i A texlive-luatex                  - TeX Live: LuaTeX packages                 
+
+
+i   compiz                          - OpenGL window and compositing manager     
+i   compiz-core                     - OpenGL window and compositing manager     
+i   compiz-fusion-plugins-main      - transitional dummy package.               
+i   compiz-gnome                    - OpenGL window and compositing manager - GN
+i   compiz-plugins                  - OpenGL window and compositing manager - pl
+i   compiz-plugins-main             - Compiz Fusion plugins - main collection   
+i   compizconfig-backend-gconf      - Compiz Fusion configuration system - gconf
+

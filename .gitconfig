@@ -10,6 +10,7 @@
 [alias]
     trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
     propose = !git push origin +HEAD:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    unpropose = !git push origin +:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
 [push]
     default = tracking
 

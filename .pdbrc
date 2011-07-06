@@ -1,0 +1,5 @@
+import rlcompleter
+import pdb
+# pdb.Pdb.complete = lambda *args, **kwargs: rlcompleter.Completer(locals()).complete(*args, **kwargs)
+pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
+

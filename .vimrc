@@ -32,10 +32,14 @@ set hlsearch
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.pyo,*~
 
 "black colorscheme
+let g:solarized_contrast="high"    "default value is normal
+let g:solarized_visibility="high"    "default value is normal
+syntax enable
+set background=dark
+"colorscheme solarized
 colorscheme torte
-syntax on
 syntax sync fromstart
-let python_highlight_space_errors=1
+let g:python_highlight_space_errors=1
 
 set backspace=eol,start,indent
 

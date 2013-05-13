@@ -1,3 +1,4 @@
+. ~/bin/make-completer-wrapper.sh
 alias idle='/home/sagiv/bin/idle.py -s &'
 function lsw()
 {
@@ -10,7 +11,10 @@ alias local_easy_install="easy_install -d $HOME/work/python -s $HOME/bin"
 alias title=label
 alias updisp="export DISPLAY=`echo $SSH_CLIENT | awk {'print $1'}`:0.0"
 # git aliases
-alias gs='git status'
-alias gd='git diff'
+gitalias gc 'git checkout'
+gitalias gs 'git status'
+gitalias gd 'git diff'
 alias gsu='git submodule update --init'
 alias ls="ls -F"
+alias less="less -Rf"
+alias zen_activate="source /intucell/latest/bin/activate"

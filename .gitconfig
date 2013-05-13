@@ -1,16 +1,22 @@
 [user]
 	name = Sagiv Malihi
-	email = sagivmalihi@gmail.com
+	email = sagiv@intucellsystems.com
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
-    excludesfile = /home/sagiv/.gitignoreglobal
+	excludesfile = /Users/sagiv/.gitignoreglobal
 [alias]
     trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
-    propose = !git push origin +HEAD:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
-    unpropose = !git push origin +:$USER/proposed/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    propose = !git push origin +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    unpropose = !git push origin +:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
 [push]
     default = tracking
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

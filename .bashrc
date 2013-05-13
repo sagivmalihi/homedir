@@ -83,15 +83,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -99,8 +90,22 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# if [ -f ~/.bash_completions ] && ! shopt -oq posix; then
+#    . ~/.bash_completions
+#fi
+
+# export BASH_COMPLETION_COMPAT_DIR='/opt/local/etc/bash_completion.d/'
 if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
+fi
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
 
 export PYTHONPATH=$HOME/work/python/
@@ -113,4 +118,13 @@ fi
 
 export EDITOR=vim
 export CLICOLOR=1
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+#virtualenvwrapper
+export WORKON_HOME=~/work
+. /usr/local/bin/virtualenvwrapper.sh
+
+
 

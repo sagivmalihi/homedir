@@ -5,3 +5,5 @@ tags
 cscope.out
 .nfs*
 *~
+.DS_Store
+cscope_files.in

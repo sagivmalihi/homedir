@@ -41,6 +41,7 @@ set background=dark
 colorscheme torte
 syntax sync fromstart
 let g:python_highlight_space_errors=1
+let g:syntastic_python_checker = 'pyflakes'
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
 

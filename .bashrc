@@ -124,7 +124,7 @@ export LANG=en_US.UTF-8
 
 #virtualenvwrapper
 export WORKON_HOME=~/work
-. /usr/local/bin/virtualenvwrapper.sh
+. /opt/local/bin/virtualenvwrapper.sh
 
 
 

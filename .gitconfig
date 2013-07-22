@@ -6,7 +6,7 @@
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/sagiv/.gitignoreglobal
+	excludesfile = ~/.gitignoreglobal
 [alias]
     trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
     propose = !git push origin +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')

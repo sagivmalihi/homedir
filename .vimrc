@@ -121,4 +121,5 @@ endif
 set wildignore+=intustall/**
 set wildignore+=GUI/public/OLH/**
 set wildignore+=build/**
+set wildignore+=dist/**
 set wildignore+=doc/_build/**

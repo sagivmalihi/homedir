@@ -9,7 +9,7 @@
 	excludesfile = ~/.gitignoreglobal
 [alias]
     trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
-    propose = !git push origin +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    propose = !git push origin --set-upstream +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
     unpropose = !git push origin +:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
 [push]
     default = tracking

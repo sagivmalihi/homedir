@@ -19,6 +19,7 @@ filetype plugin on
 
 " Remember more commands and search history
 set history=1000
+set scrollopt=jump
 
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
@@ -108,6 +109,9 @@ nnoremap <C-Right> w
 vnoremap <C-S-Right> w
 nnoremap <C-S-Right> gh<C-O>w
 inoremap <C-S-Right> <C-O>gh<C-O>w
+
+" easily insert pudb ;)
+map! <F2> import pdb; pdb.set_trace()<Esc>
 
 
 cmap w!! %!sudo tee > /dev/null %

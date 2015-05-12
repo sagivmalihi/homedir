@@ -1,11 +1,11 @@
 echo building ctags...
 rm tags
-ctags -R
-cat tags | tr  \\ / > tags.forwardslashes
-mv tags.forwardslashes tags
+ctags -R --exclude='*.js'
+# cat tags | tr  \\ / > tags.forwardslashes
+# mv tags.forwardslashes tags
 
 echo building cscope tags...
 # find . -name "*.py" > cscope.files
 rm cscope.out
-pycscope.py -R
+pycscope -R
 # rm cscope.files

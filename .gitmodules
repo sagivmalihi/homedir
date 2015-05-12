@@ -22,3 +22,6 @@
 [submodule ".mongorc.js"]
 	path = .mongorc.js
 	url = git@github.com:TylerBrock/mongo-hacker.git
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

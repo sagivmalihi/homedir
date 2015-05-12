@@ -17,6 +17,8 @@ set number      " set line numbers
 filetype on
 filetype plugin on
 
+au BufRead,BufNewFile *.ts        setlocal filetype=typescript
+
 " Remember more commands and search history
 set history=1000
 set scrollopt=jump
@@ -32,6 +34,7 @@ set showmatch   "show matching parens
 set hlsearch
 
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.pyo,*~
+set wildmenu
 
 "black colorscheme
 let g:solarized_contrast="high"    "default value is normal
@@ -43,6 +46,8 @@ colorscheme torte
 syntax sync fromstart
 let g:python_highlight_space_errors=1
 let g:syntastic_python_checker = 'pyflakes'
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_typescript_checkers = ['tslint']
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
 
@@ -127,3 +132,6 @@ set wildignore+=GUI/public/OLH/**
 set wildignore+=build/**
 set wildignore+=dist/**
 set wildignore+=doc/_build/**
+set wildignore+=**/*.egg-info
+
+

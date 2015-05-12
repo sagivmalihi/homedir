@@ -12,7 +12,7 @@
     propose = !git push origin --set-upstream +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
     unpropose = !git push origin +:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
 [push]
-    default = tracking
+	default = upstream
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -20,3 +20,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[diff]
+	tool = tkdiff 

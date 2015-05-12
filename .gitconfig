@@ -11,6 +11,8 @@
     trash = !git add . && git commit -m 'trash' && git reset --hard HEAD^
     propose = !git push origin --set-upstream +HEAD:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
     unpropose = !git push origin +:$USER/$(git-symbolic-ref HEAD | sed 's/^refs\\/heads\\///')
+    pullrequest = !git push origin +HEAD:$USER/$1 && /intucell/latest/bin/python scripts/pull_request.py -f $USER/$1 -t $2 -r $3 && echo
+
 [push]
 	default = upstream
 

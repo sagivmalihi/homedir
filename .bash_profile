@@ -1,7 +1,7 @@
 # .bash_profile
 
 export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/mysql55/bin/:$PATH
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then

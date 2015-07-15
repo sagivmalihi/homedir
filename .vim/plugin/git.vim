@@ -27,6 +27,9 @@ if !exists('g:git_no_map_default') || !g:git_no_map_default
     nnoremap <Leader>gD :GitDiff --cached<Enter>
     nnoremap <Leader>gs :GitStatus<Enter>
     nnoremap <Leader>gl :GitLog<Enter>
+    nnoremap <leader>gb :GitBlame<Enter>
+    nnoremap <leader>gg "zyiw:GitGrep "\<<C-R>z\>"<CR>
+    nnoremap <leader>gh :GitGrep 
     nnoremap <Leader>ga :GitAdd<Enter>
     nnoremap <Leader>gA :GitAdd <cfile><Enter>
     nnoremap <Leader>gc :GitCommit<Enter>
@@ -123,6 +126,18 @@ function! GitLog(args)
     let git_output = s:SystemGit('log ' . a:args . ' -- ' . s:Expand('%'))
     call <SID>OpenGitBuffer(git_output)
     setlocal filetype=git-log
+endfunction
+
+" Git Grep.
+function! GitGrep(args)
+    call histadd("cmd", "GitGrep " . a:args)
+    let git_output = s:SystemGit('grep -n ' . a:args)
+    let git_output = substitute(git_output, '-\(\d\d*\)-', ':\1:', 'g')
+    let git_command_edit_save = g:git_command_edit
+    let g:git_command_edit = 'enew'
+    call <SID>OpenGitBuffer(git_output)
+    let g:git_command_edit = git_command_edit_save
+    setlocal filetype=git-grep
 endfunction
 
 " Add file to index.
@@ -343,6 +358,7 @@ command! -nargs=* -complete=customlist,ListGitCommits GitDiff     call GitDiff(<
 command!          GitStatus           call GitStatus()
 command! -nargs=? GitAdd              call GitAdd(<q-args>)
 command! -nargs=* GitLog              call GitLog(<q-args>)
+command! -nargs=1 GitGrep             call GitGrep(<q-args>)
 command! -nargs=* GitCommit           call GitCommit(<q-args>)
 command! -nargs=1 GitCatFile          call GitCatFile(<q-args>)
 command!          GitBlame            call GitBlame()

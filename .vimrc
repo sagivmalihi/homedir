@@ -45,8 +45,8 @@ set background=dark
 colorscheme torte
 syntax sync fromstart
 let g:python_highlight_space_errors=1
-let g:syntastic_python_checker = 'pyflakes'
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tslint']
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
@@ -133,5 +133,5 @@ set wildignore+=build/**
 set wildignore+=dist/**
 set wildignore+=doc/_build/**
 set wildignore+=**/*.egg-info
-
+set wildignore+=node_modules/**
 

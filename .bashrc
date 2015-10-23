@@ -122,9 +122,9 @@ export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-#virtualenvwrapper
-export WORKON_HOME=~/work
-. /opt/local/bin/virtualenvwrapper.sh
 
 
 
+
+export NVM_DIR="/home/sagiv/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

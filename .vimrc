@@ -133,5 +133,5 @@ set wildignore+=build/**
 set wildignore+=dist/**
 set wildignore+=doc/_build/**
 set wildignore+=**/*.egg-info
-set wildignore+=node_modules/**
+set wildignore+=**/node_modules/**
 

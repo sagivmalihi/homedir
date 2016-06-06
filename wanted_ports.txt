@@ -1,0 +1,50 @@
+bash-completion
+coreutils
+corkscrew
+cscope
+ctags
+dos2unix
+gdb
+ghostscript +x11
+git +bash_completion+credential_osxkeychain+doc+pcre+perl5_16+python27
+MacVim +cscope+huge+python27+ruby19
+vim +python27+ruby19
+mercurial
+nodejs +python27+ssl
+npm
+phantomjs
+py27-cython
+py27-pip
+py27-setuptools
+py27-virtualenv
+py27-virtualenv-clone
+py27-virtualenvwrapper
+py27-wxpython-3.0
+py34-pip
+py34-setuptools
+python27 +universal
+python34
+rsync
+ruby
+ruby19 +doc
+ruby21
+sqlite3 +universal
+sshfs
+sshpass
+swig
+swig-python
+texinfo
+texlive-basic +doc
+texlive-bin +x11
+texlive-common
+texlive-latex +doc
+texlive-latex-extra +doc
+texlive-latex-recommended +doc
+texlive-pictures +doc
+tiff +universal
+tk +quartz
+tkdiff
+unrar
+wget +ssl
+wxPython-3.0
+py27-readline

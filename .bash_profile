@@ -17,3 +17,5 @@ PATH=$HOME/.cabal/bin:$PATH:$HOME/bin
 export PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

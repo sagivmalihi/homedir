@@ -1,3 +1,4 @@
+cmake
 bash
 bash-completion
 coreutils
@@ -26,9 +27,7 @@ py34-setuptools
 python27 +universal
 python34
 rsync
-ruby
 ruby19 +doc
-ruby21
 sqlite3 +universal
 sshfs
 sshpass

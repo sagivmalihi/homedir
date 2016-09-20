@@ -108,9 +108,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export PYTHONPATH=$HOME/work/python/
-export PYTHONSTARTUP=$HOME/work/python/startup.py
-
 if [ -t 0 ]; then
     stty stop undef
     stty start undef
@@ -124,3 +121,6 @@ export LANG=en_US.UTF-8
 
 export NVM_DIR=$HOME/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export ANDROID_HOME="/opt/local/share/java/android-sdk-macosx/"
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"

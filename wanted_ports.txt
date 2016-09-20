@@ -48,3 +48,4 @@ unrar
 wget +ssl
 wxPython-3.0
 py27-readline
+watchman

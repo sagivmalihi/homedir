@@ -7,6 +7,9 @@ source $HOME/.vim/python_fn.vim
 " Autoload package bundles
 call pathogen#runtime_append_all_bundles()
 
+set exrc   " enable per-directory .vimrc files
+set secure   " disable unsafe commands in local .vimrc files
+
 " source $HOME/.vim/ropevim.vim
 
 set selection=inclusive
@@ -48,6 +51,7 @@ let g:python_highlight_space_errors=1
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tslint']
+let g:syntastic_css_checkers = ['stylelint']
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
 
@@ -129,9 +133,8 @@ endif
 
 set wildignore+=intustall/**
 set wildignore+=GUI/public/OLH/**
-set wildignore+=build/**
+set wildignore+=**/build/**
 set wildignore+=dist/**
 set wildignore+=doc/_build/**
 set wildignore+=**/*.egg-info
 set wildignore+=**/node_modules/**
-

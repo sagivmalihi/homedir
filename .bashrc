@@ -83,6 +83,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias npm-exec='PATH=$(npm bin):$PATH'
+alias eslint="npm-exec eslint"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -124,3 +127,5 @@ export NVM_DIR=$HOME/.nvm
 
 export ANDROID_HOME="/opt/local/share/java/android-sdk-macosx/"
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
+
+export PATH=./node_modules/.bin/:$PATH

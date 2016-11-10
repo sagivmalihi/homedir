@@ -18,3 +18,8 @@ alias gsu='git submodule update --init'
 alias ls="ls -F"
 alias less="less -Rf"
 alias zen_activate="source /intucell/latest/bin/activate"
+
+# nginx
+alias nginx_start='sudo launchctl load -w /Library/LaunchDaemons/org.macports.nginx.plist'
+alias nginx_stop='sudo launchctl unload -w /Library/LaunchDaemons/org.macports.nginx.plist'
+alias nginx_restart='nginx_stop; nginx_start;'

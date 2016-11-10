@@ -9,3 +9,4 @@ cscope.out
 .DS_Store
 cscope_files.in
 *.prof
+.starscope.db

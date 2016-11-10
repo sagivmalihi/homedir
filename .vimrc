@@ -50,6 +50,7 @@ syntax sync fromstart
 let g:python_highlight_space_errors=1
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_typescript_checkers = ['tslint']
 let g:syntastic_css_checkers = ['stylelint']
 let g:indent_guides_guide_size=1

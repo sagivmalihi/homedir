@@ -125,7 +125,10 @@ export LANG=en_US.UTF-8
 export NVM_DIR=$HOME/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export ANDROID_HOME="/opt/local/share/java/android-sdk-macosx/"
+# export ANDROID_HOME="/opt/local/share/java/android-sdk-macosx/"
+export ANDROID_HOME="/Users/sagiv/Library/Android/sdk"
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
-export PATH=./node_modules/.bin/:$PATH
+export PATH=$ANDROID_HOME/platform-tools:./node_modules/.bin/:$PATH
+
+

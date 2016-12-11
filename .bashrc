@@ -130,5 +130,5 @@ export ANDROID_HOME="/Users/sagiv/Library/Android/sdk"
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
 export PATH=$ANDROID_HOME/platform-tools:./node_modules/.bin/:$PATH
-
+export PYTHONPATH=$HOME/work/python/
 

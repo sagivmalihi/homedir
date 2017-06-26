@@ -40,3 +40,12 @@
 [submodule ".vim/bundle/mustach"]
 	path = .vim/bundle/mustach
 	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "/Users/sagiv/.vim/bundle/tagbar"]
+	path = /Users/sagiv/.vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "/Users/sagiv/.vim/bundle/vim-airline"]
+	path = /Users/sagiv/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "/Users/sagiv/.vim/bundle/tern_for_vim"]
+	path = /Users/sagiv/.vim/bundle/tern_for_vim
+	url = https://github.com/ternjs/tern_for_vim.git

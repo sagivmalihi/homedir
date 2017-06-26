@@ -16,6 +16,8 @@ set selection=inclusive
 set ruler       " show the cursor position all the time
 set showcmd     " display incomplete commands
 set number      " set line numbers
+set laststatus=2
+
 
 filetype on
 filetype plugin on
@@ -55,6 +57,8 @@ let g:syntastic_typescript_checkers = ['tslint']
 let g:syntastic_css_checkers = ['stylelint']
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
+
+let g:tagbar_ctags_bin="/opt/local/bin/ctags"
 
 " haskell stuff
 " use ghc functionality for haskell files

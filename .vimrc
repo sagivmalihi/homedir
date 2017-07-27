@@ -70,10 +70,10 @@ let g:haddock_browser_callformat = "%s %s"
 set backspace=eol,start,indent
 
 "proper tab handling (insert spaces)
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 set autoindent
 set smarttab
 set smartindent
@@ -114,15 +114,24 @@ noremap <C-E> <End>
 
 "Edit mapping (make cursor keys work like in Windows: <C-Left><C-Right>
 "Move to next word.
-nnoremap <C-Left> b
-vnoremap <C-S-Left> b
-nnoremap <C-S-Left> gh<C-O>b
-inoremap <C-S-Left> <C-O>gh<C-O>b
+"nnoremap <C-Left> b
+"vnoremap <C-S-Left> b
+"nnoremap <C-S-Left> gh<C-O>b
+"inoremap <C-S-Left> <C-O>gh<C-O>b
 
-nnoremap <C-Right> w
-vnoremap <C-S-Right> w
-nnoremap <C-S-Right> gh<C-O>w
-inoremap <C-S-Right> <C-O>gh<C-O>w
+"nnoremap <C-Right> w
+"vnoremap <C-S-Right> w
+"nnoremap <C-S-Right> gh<C-O>w
+"inoremap <C-S-Right> <C-O>gh<C-O>w
+
+" Natural split movement
+nnoremap <C-Down> <C-W><C-J>
+nnoremap <C-Up> <C-W><C-K>
+nnoremap <C-Right> <C-W><C-L>
+nnoremap <C-Left> <C-W><C-H>
+
+set splitbelow
+set splitright
 
 " easily insert pudb ;)
 map! <F2> import pdb; pdb.set_trace()<Esc>

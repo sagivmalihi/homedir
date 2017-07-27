@@ -19,6 +19,7 @@ function latest_tasks() {
     curl -H "x-heat-api-key: `show_token $1`" "https://api.heatintelligence.com/users/developer/tasks/complete?limit=10&reverse=1" | json_pp;
 }
 
+alias update_user=$HOME/crunchable/api-server/app/scripts/update_user.py
 alias local_easy_install="easy_install -d $HOME/work/python -s $HOME/bin"
 alias title=label
 alias updisp="export DISPLAY=`echo $SSH_CLIENT | awk {'print $1'}`:0.0"

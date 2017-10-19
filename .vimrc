@@ -145,10 +145,8 @@ if has("gui_macvim")
 endif
 
 
-set wildignore+=intustall/**
-set wildignore+=GUI/public/OLH/**
-set wildignore+=**/build/**
-set wildignore+=dist/**
-set wildignore+=doc/_build/**
-set wildignore+=**/*.egg-info
-set wildignore+=**/node_modules/**
+set wildignore+=*/build/*
+set wildignore+=*/dist/*
+set wildignore+=doc/_build/*
+set wildignore+=*/*.egg-info
+set wildignore+=*/node_modules/*

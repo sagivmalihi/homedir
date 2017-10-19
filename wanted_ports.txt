@@ -9,7 +9,7 @@ dos2unix
 gdb
 ghostscript +x11
 git +bash_completion+credential_osxkeychain+doc+pcre+perl5_16+python27
-MacVim +cscope+huge+python27+ruby19
+MacVim +cscope+huge+python27+ruby23
 vim +python27+ruby19
 mercurial
 nodejs +python27+ssl
@@ -27,7 +27,7 @@ py34-setuptools
 python27 +universal
 python34
 rsync
-ruby19 +doc
+ruby23+doc
 sqlite3 +universal
 sshfs
 sshpass

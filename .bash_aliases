@@ -16,7 +16,10 @@ function show_user_id() {
     $HOME/crunchable/api-server/app/scripts/update_user.py --email $1 | grep \"_id\" | awk '{print $2;}' | tr -d '",';
 }
 function latest_tasks() {
-    curl -H "x-heat-api-key: `show_token $1`" "https://api.heatintelligence.com/users/developer/tasks/complete?limit=10&reverse=1" | json_pp;
+    curl -H "x-heat-api-key: `show_token $1`" "https://api.heatintelligence.com/users/developer/tasks/complete?limit=$2&reverse=1" | json_pp;
+}
+function latest_flagged() {
+    curl -H "x-heat-api-key: `show_token $1`" "https://api.heatintelligence.com/users/developer/tasks/flagged?limit=$2&reverse=1" | json_pp;
 }
 
 alias update_user=$HOME/crunchable/api-server/app/scripts/update_user.py

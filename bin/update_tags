@@ -1,6 +1,6 @@
 echo building ctags...
 rm tags
-ctags -R --exclude='*.js'
+ctags -R --exclude='*.js' --exclude='lib/**' --exclude='bin/**' --exclude='include/**'
 # cat tags | tr  \\ / > tags.forwardslashes
 # mv tags.forwardslashes tags
 

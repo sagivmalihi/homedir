@@ -10,7 +10,7 @@ gdb
 ghostscript +x11
 git +bash_completion+credential_osxkeychain+doc+pcre+perl5_16+python27
 MacVim +cscope+huge+python27+ruby23
-vim +python27+ruby19
+vim +python27+ruby23
 mercurial
 nodejs +python27+ssl
 npm

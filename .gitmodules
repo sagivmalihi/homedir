@@ -15,10 +15,10 @@
 	url = https://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/vim-indent-guides"]
 	path = .vim/bundle/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule ".mongorc.js"]
 	path = .mongorc.js
-	url = git@github.com:TylerBrock/mongo-hacker.git
+	url = https://github.com/TylerBrock/mongo-hacker.git
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
@@ -30,22 +30,22 @@
 	url = https://github.com/leafgarland/typescript-vim
 [submodule ".vim/bundle/dustjs"]
 	path = .vim/bundle/dustjs
-	url = git://github.com/jimmyhchan/dustjs.vim.git
+	url = https://github.com/jimmyhchan/dustjs.vim.git
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
 [submodule ".vim/bundle/mustach"]
 	path = .vim/bundle/mustach
-	url = git://github.com/mustache/vim-mustache-handlebars.git
-[submodule "/Users/sagiv/.vim/bundle/tagbar"]
-	path = /Users/sagiv/.vim/bundle/tagbar
+	url = https://github.com/mustache/vim-mustache-handlebars.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "/Users/sagiv/.vim/bundle/vim-airline"]
-	path = /Users/sagiv/.vim/bundle/vim-airline
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "/Users/sagiv/.vim/bundle/tern_for_vim"]
-	path = /Users/sagiv/.vim/bundle/tern_for_vim
+[submodule ".vim/bundle/tern_for_vim"]
+	path = .vim/bundle/tern_for_vim
 	url = https://github.com/ternjs/tern_for_vim.git
-[submodule "/Users/sagiv/.vim/bundle/vim-virtualenv"]
-	path = /Users/sagiv/.vim/bundle/vim-virtualenv
-	url = git@github.com:jmcantrell/vim-virtualenv.git
+[submodule ".vim/bundle/vim-virtualenv"]
+	path = .vim/bundle/vim-virtualenv
+	url = https://github.com/jmcantrell/vim-virtualenv.git

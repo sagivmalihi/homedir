@@ -1,6 +1,10 @@
 # preserve LD_LIBRARY_PATH
 setenv LD_LIBRARY_PATH $LD_LIBRARY_PATH_FOR_SCREEN
 
+# use a common ssh_auth_sock so that we can ssh
+# to this machine over and over and reuse external credentials
+setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+
 # No bell at all
   vbell off				# default: off
   vbell_msg "   -- Ring, Ring!! --   "	# default: "Wuff,Wuff!!"

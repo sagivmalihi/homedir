@@ -49,12 +49,14 @@ set background=dark
 "colorscheme solarized
 colorscheme torte
 syntax sync fromstart
+let g:ycm_show_diagnostics_ui = 0
 let g:python_highlight_space_errors=1
 let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_typescript_checkers = ['tslint']
 let g:syntastic_css_checkers = ['stylelint']
+let g:syntastic_c_checkers = ['clang_check']
 let g:indent_guides_guide_size=1
 let g:indent_guides_enable_on_vim_startup=1
 

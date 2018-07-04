@@ -24,6 +24,12 @@ function latest_tasks_dump() {
 function latest_tasks_local() {
   curl -H "x-heat-api-key: `show_token $1`" "http://localhost:3000/users/developer/tasks/complete?limit=$2&reverse=1&notest=1";
 }
+function latest_hash() {
+  curl -H "x-heat-api-key: 4180232113ff4104727c5b115d0f0790" "https://api.heatintelligence.com/stats/hash/$1/complete?limit=$2&reverse=1";
+}
+function latest_hash_local() {
+  curl -H "x-heat-api-key: 4180232113ff4104727c5b115d0f0790" "http://localhost:3000/stats/hash/$1/complete?limit=$2&reverse=1";
+}
 function latest_flagged() {
   curl -H "x-heat-api-key: `show_token $1`" "https://api.heatintelligence.com/users/developer/tasks/flagged?limit=$2&reverse=1&notest=1" | json_pp;
 }

@@ -9,6 +9,7 @@ dos2unix
 gdb
 ghostscript +x11
 git +bash_completion+credential_osxkeychain+doc+pcre+perl5_16+python27
+git-lfs
 MacVim +cscope+huge+python27+ruby23
 vim +python27+ruby23
 mercurial

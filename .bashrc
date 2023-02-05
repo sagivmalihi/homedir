@@ -132,3 +132,5 @@ export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 export PATH=$ANDROID_HOME/platform-tools:./node_modules/.bin/:$PATH
 export PYTHONPATH=$HOME/work/python/
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"

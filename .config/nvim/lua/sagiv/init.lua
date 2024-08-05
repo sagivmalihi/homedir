@@ -3,4 +3,4 @@ require('sagiv.remap')
 require('sagiv.packer')
 require('sagiv.set')
 require('sagiv.colors')
-
+require('sagiv.neovide')

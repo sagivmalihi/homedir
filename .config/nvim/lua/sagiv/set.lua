@@ -30,3 +30,5 @@ vim.opt.showmatch = true
 vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
+
+vim.opt.keymodel = "startsel,stopsel"

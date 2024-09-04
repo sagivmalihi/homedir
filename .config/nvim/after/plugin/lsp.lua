@@ -61,6 +61,11 @@ require('mason-lspconfig').setup({
         }
       }
     end,
+    tsserver = function()
+      require'lspconfig'.tsserver.setup{
+        filetypes = {'typescript', 'typescriptreact', 'typescript.tsx'},
+      }
+    end,
   }
 })
 

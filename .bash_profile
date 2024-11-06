@@ -20,10 +20,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Finished adapting your PATH environment variable for use with MacPorts.
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+# if [ -f "/Users/sagiv/.config/fabric/fabric-bootstrap.inc" ]; then . "/Users/sagiv/.config/fabric/fabric-bootstrap.inc"; fi

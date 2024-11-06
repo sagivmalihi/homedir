@@ -58,7 +58,7 @@ gitalias gc 'git checkout'
 gitalias gs 'git status'
 gitalias gd 'git diff'
 alias gsu='git submodule update --init'
-alias ls="ls -F"
+alias ls="lsd -F"
 alias less="less -Rf"
 alias zen_activate="source /intucell/latest/bin/activate"
 

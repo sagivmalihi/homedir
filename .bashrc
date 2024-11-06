@@ -122,15 +122,32 @@ export CLICOLOR=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export NVM_DIR=$HOME/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR=$HOME/.nvm
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # export ANDROID_HOME="/opt/local/share/java/android-sdk-macosx/"
 export ANDROID_HOME="/Users/sagiv/Library/Android/sdk"
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
-export PATH=$ANDROID_HOME/platform-tools:./node_modules/.bin/:$PATH
+export PATH=$ANDROID_HOME/platform-tools:./node_modules/.bin/:$HOME/.local/bin/:$PATH
+
+# Finished adapting your PATH environment variable for use with MacPorts.
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export JAVA_HOME="/usr/local/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+
 export PYTHONPATH=$HOME/work/python/
 
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export BROWSER=Arc
+
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+# if [ -f "/Users/sagiv/.config/fabric/fabric-bootstrap.inc" ]; then . "/Users/sagiv/.config/fabric/fabric-bootstrap.inc"; fi
+
+eval "$(mise activate bash)"

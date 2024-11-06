@@ -20,7 +20,7 @@ local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'eslint', 'dockerls', 'cssls', 'jsonls', 'pylsp'},
+  ensure_installed = {'eslint', 'dockerls', 'cssls', 'jsonls', 'ruff'},
   handlers = {
     function(server_name)
       require('lspconfig')[server_name].setup({
@@ -47,23 +47,11 @@ require('mason-lspconfig').setup({
         }
       })
     end,
-    pylsp = function()
-      require'lspconfig'.pylsp.setup{
+    ruff = function()
+      require('lspconfig').ruff.setup{
         settings = {
-          pylsp = {
-            plugins = {
-              pycodestyle = {
-                ignore = {'W391'},
-                maxLineLength = 180
-              }
-            }
-          }
+          args = {},
         }
-      }
-    end,
-    tsserver = function()
-      require'lspconfig'.tsserver.setup{
-        filetypes = {'typescript', 'typescriptreact', 'typescript.tsx'},
       }
     end,
   }

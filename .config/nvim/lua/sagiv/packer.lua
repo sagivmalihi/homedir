@@ -60,6 +60,16 @@ return require('packer').startup(function(use)
 
   use('sbdchd/neoformat')
 
+  use({
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    requires = {
+      { "github/copilot.vim" }, -- or github/copilot.vim
+      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+    },
+    run = "make tiktoken", -- Only on MacOS or Linux
+  })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

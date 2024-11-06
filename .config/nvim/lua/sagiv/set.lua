@@ -32,3 +32,6 @@ vim.opt.termguicolors = true
 vim.opt.updatetime = 50
 
 vim.opt.keymodel = "startsel,stopsel"
+
+vim.opt.ignorecase = true       -- Ignore case letters when search
+vim.opt.smartcase = true        -- Ignore lowercase for the whole pattern

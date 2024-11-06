@@ -46,3 +46,9 @@ vim.api.nvim_set_keymap('s', '<D-v>', '"+p', { noremap = true, silent = true })
 
 -- remap leader-f to EslintFixall
 vim.keymap.set("n", "<leader>f", ":EslintFixAll<CR>")
+
+-- remap leader-d to open diagnostic float
+vim.keymap.set("n", "<leader>D", function ()
+    vim.diagnostic.open_float()
+end)
+

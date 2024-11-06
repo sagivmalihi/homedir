@@ -1,5 +1,3 @@
-set rubydll=/opt/local/lib/libruby.2.6.dylib
-set pythondll=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib
 set nocompatible
 behave mswin
 
@@ -93,7 +91,6 @@ set completeopt=longest,menuone
 "inoremap <expr> <cr> pumvisible() ? "\<c-y>" : "\<c-g>u\<cr>"
 :inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 :inoremap <expr> <m-;> pumvisible() ? "\<lt>c-n>" : "\<lt>c-x>\<lt>c-o>\<lt>c-n>\<lt>c-p>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
-
 
 function! InsertTabWrapper(direction)
     let col = col('.') - 1

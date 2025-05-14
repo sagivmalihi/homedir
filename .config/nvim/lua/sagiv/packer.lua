@@ -26,7 +26,8 @@ return require('packer').startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
 
   use("github/copilot.vim")
-  
+  -- use('augmentcode/augment.vim')
+
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('mbbill/undotree')
@@ -62,7 +63,7 @@ return require('packer').startup(function(use)
 
   use({
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    branch = "main",
     requires = {
       { "github/copilot.vim" }, -- or github/copilot.vim
       { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper

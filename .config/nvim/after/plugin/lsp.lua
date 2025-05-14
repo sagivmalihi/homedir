@@ -18,42 +18,63 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- Initialize Mason without using mason-lspconfig
 require('mason').setup({})
-require('mason-lspconfig').setup({
-  ensure_installed = {'eslint', 'dockerls', 'cssls', 'jsonls', 'ruff'},
-  handlers = {
-    function(server_name)
-      require('lspconfig')[server_name].setup({
-        capabilities = lsp_capabilities,
-      })
-    end,
-    lua_ls = function()
-      require('lspconfig').lua_ls.setup({
-        capabilities = lsp_capabilities,
-        settings = {
-          Lua = {
-            runtime = {
-              version = 'LuaJIT'
-            },
-            diagnostics = {
-              globals = {'vim'},
-            },
-            workspace = {
-              library = {
-                vim.env.VIMRUNTIME,
-              }
-            }
-          }
-        }
-      })
-    end,
-    ruff = function()
-      require('lspconfig').ruff.setup{
-        settings = {
-          args = {},
-        }
+
+-- Configure LSP servers directly
+local lspconfig = require('lspconfig')
+
+-- Setup for language servers
+lspconfig.eslint.setup({
+  capabilities = lsp_capabilities,
+})
+
+lspconfig.dockerls.setup({
+  capabilities = lsp_capabilities,
+})
+
+lspconfig.cssls.setup({
+  capabilities = lsp_capabilities,
+})
+
+lspconfig.jsonls.setup({
+  capabilities = lsp_capabilities,
+})
+
+-- Special configuration for lua_ls
+lspconfig.lua_ls.setup({
+  capabilities = lsp_capabilities,
+  root_dir = function()
+    return vim.fn.getcwd()
+  end,
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'LuaJIT'
+      },
+      diagnostics = {
+        globals = {'vim'},
+      },
+      workspace = {
+        library = {
+          vim.env.VIMRUNTIME,
+        },
+        checkThirdParty = false,
+        maxPreload = 2000,
+        preloadFileSize = 1000
+      },
+      telemetry = {
+        enable = false
       }
-    end,
+    }
+  }
+})
+
+-- Special configuration for ruff
+lspconfig.ruff.setup({
+  capabilities = lsp_capabilities,
+  settings = {
+    args = {},
   }
 })
 
